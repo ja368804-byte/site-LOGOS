@@ -5,7 +5,7 @@ export function prefersReducedMotion() {
   if (forced === "1") return false
   if (forced === "0") return true
 
-  return window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  return false
 }
 
 export function applyMotionMode() {

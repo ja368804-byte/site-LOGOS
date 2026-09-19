@@ -47,7 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var q=new URLSearchParams(location.search).get("motion");var r=q==="0"||(q!=="1"&&window.matchMedia("(prefers-reduced-motion: reduce)").matches);var e=document.documentElement;e.classList.toggle("motion-reduced",r);e.classList.toggle("has-cinematic",!r);}catch(err){}})();`,
+            __html: `(function(){try{var q=new URLSearchParams(location.search).get("motion");var r=q==="0";var e=document.documentElement;e.classList.toggle("motion-reduced",r);e.classList.toggle("has-cinematic",!r);}catch(err){}})();`,
           }}
         />
       </head>
